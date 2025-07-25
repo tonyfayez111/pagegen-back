@@ -6,7 +6,7 @@ import { SectionsModule } from './sections/sections.module';
 @Module({
   imports: [
     ConfigModule.forRoot(), // ✅ Must come BEFORE MongooseModule
-    MongooseModule.forRoot(process.env.MONGO_URI ?? 'mongodb://localhost:27017/sections'),
+    MongooseModule.forRoot('mongodb+srv://tonyfayez111:fmatlfmatl@cluster0.ca6ucyv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'),
     SectionsModule,
   ],
   controllers: [],
